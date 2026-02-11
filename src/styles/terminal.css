@@ -2,9 +2,9 @@
 @import url('https://cdn.staticdelivr.com/gfonts/css2?family=Fira+Code:wght@300..700&display=swap');
 
 :root {
-  --background: #1a170f;
-  --foreground: #eceae5;
-  --accent: #eec35e;
+  --background: #fffaec;
+  --foreground: #000000;
+  --accent: #f07a0c;
   --radius: 0;
   --font-size: 1rem;
   --line-height: 1.54em;
@@ -23,13 +23,7 @@ html {
 }
 
 body {
-  font-family:
-    "Fira Code",
-    "JetBrains Mono",
-    Monaco,
-    Consolas,
-     "Ubuntu Mono",
-    monospace;
+  font-family: 'GortonPerfected','Arial';
   font-size: var(--font-size);
   font-weight: 400;
   line-height: var(--line-height);
@@ -118,6 +112,7 @@ fieldset input,
 fieldset select,
 fieldset textarea,
 fieldset label,
+
 fieldset button {
   margin-top: calc(var(--line-height) * 0.5);
   width: 100%;
@@ -205,7 +200,7 @@ input[type="radio"]:checked {
 img {
   display: block;
   max-width: 100%;
-  border: 8px solid var(--accent);
+  border: 4px solid var(--accent);
   border-radius: var(--radius);
   padding: 8px;
   overflow: hidden;
@@ -250,13 +245,7 @@ ol li {
 
 code,
 kbd {
-  font-family:
-    "Fira Code",
-    "JetBrains Mono",
-    Monaco,
-    Consolas,
-    Ubuntu Mono,
-    monospace !important;
+  font-family: 'GortonPerfected', 'Arial';
   font-feature-settings: normal;
   background: color-mix(in srgb, var(--foreground) 5%, transparent);
   color: color-mix(in srgb, var(--foreground) 5%, var(--accent));
@@ -384,4 +373,13 @@ b, strong,
 th,
 button {
   font-weight: 600;
+}
+
+/* Register your custom font family and tell the browser where to find it. */
+@font-face {
+  font-family: 'GortonPerfected';
+  src: url('/fonts/GortonPerfectedVF.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }

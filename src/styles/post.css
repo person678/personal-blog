@@ -72,7 +72,9 @@
 }
 
 .post-cover img {
-  border: 10px solid var(--accent);
+
+  /*Modifies size of border around images. 10px originally. */
+  border: 4px solid var(--accent);
   background: transparent;
   padding: 20px;
 }
